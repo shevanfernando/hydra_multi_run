@@ -1,0 +1,6 @@
+type: mongodb
+host: localhost
+port: 27017
+username: myuser
+password: mypassword
+db_name: mydatabase

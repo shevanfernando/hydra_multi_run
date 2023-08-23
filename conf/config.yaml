@@ -1,0 +1,13 @@
+defaults:
+  - db: mysql
+  - _self_
+
+task: performance_benchmark
+dataset: my_dataset.csv
+num_iterations: 1000
+
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      db: glob(*) # db: mysql,postgresql
